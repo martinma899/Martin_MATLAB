@@ -137,6 +137,7 @@ renderSTL(fv)
 % stuff
 axis equal
 axis off
-%view([-1 1 -1])
-view([0 1 0])
+grid on
+view([-1 1 -1])
+%view([0 1 0])
 camroll(180)
