@@ -1,0 +1,4 @@
+Name: Gary
+Subtotal=$0.00
+Total=$0.00
+The Krusty Krab, Come spend your money here!

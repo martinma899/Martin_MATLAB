@@ -1,0 +1,36 @@
+X/Y directions
+Nbx 1 0
+Nby 0 1
+Nf 135
+3 0 -1
+3 0 -1
+Moment Equation
+Nf cosd(15)
+Nbx -sqrt(3)
+Nby 1
+-3 1    
+-3 2    
+Joint B
+Nbx 1 0
+Nby 0 1
+Fbc -45
+Fbf -(45+75-atand(1/(4-sqrt(3))))
+Joint C
+Fbc 135
+Fcf -75-75
+Fcd -75
+Joint D
+Fcd 105
+Fdf 105+75-atand(1/(4-sqrt(3)))
+Fde -1 0
+3 0 -1
+Joint E
+3 0 -1
+Fde 1 0
+Fef 105
+Joint F
+Nf 30+30+75
+Fbf 30+30+atand(1/(4-sqrt(3)))
+Fcf 30
+Fdf -atand(1/(4-sqrt(3)))
+Fef -75

@@ -1,0 +1,5 @@
+magnitude location ; direction
+Fac [0 0 0];[-5/2 -5/2 7]
+Fcd [0 0 0];[-1 0 0]
+Fbc [0 0 0];[0 -1 0]
+1.45 [0 0 0];[0 0 1]

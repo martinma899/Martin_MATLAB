@@ -1,0 +1,129 @@
+
+ ===================================================
+  XFOIL Version 6.94
+  Copyright (C) 2000   Mark Drela, Harold Youngren
+
+  This software comes with ABSOLUTELY NO WARRANTY,
+    subject to the GNU General Public License.
+
+  Caveat computor
+ ===================================================
+
+ File  xfoil.def  not found
+
+   QUIT    Exit program
+
+  .OPER    Direct operating point(s)
+  .MDES    Complex mapping design routine
+  .QDES    Surface speed design routine
+  .GDES    Geometry design routine
+
+   SAVE f  Write airfoil to labeled coordinate file
+   PSAV f  Write airfoil to plain coordinate file
+   ISAV f  Write airfoil to ISES coordinate file
+   MSAV f  Write airfoil to MSES coordinate file
+   REVE    Reverse written-airfoil node ordering
+
+   LOAD f  Read buffer airfoil from coordinate file
+   NACA i  Set NACA 4,5-digit airfoil and buffer airfoil
+   INTE    Set buffer airfoil by interpolating two airfoils
+   NORM    Buffer airfoil normalization toggle
+   XYCM rr Change CM reference location, currently  0.25000 0.00000
+
+   BEND    Display structural properties of current airfoil
+
+   PCOP    Set current-airfoil panel nodes directly from buffer airfoil points
+   PANE    Set current-airfoil panel nodes ( 140 ) based on curvature
+  .PPAR    Show/change paneling
+
+  .PLOP    Plotting options
+
+   WDEF f  Write  current-settings file
+   RDEF f  Reread current-settings file
+   NAME s  Specify new airfoil name
+   NINC    Increment name version number
+
+   Z       Zoom    | (available in all menus)
+   U       Unzoom  | 
+
+ XFOIL   c>   Max thickness =     0.120035  at x =   0.300
+ Max camber    =     0.019997  at x =   0.395
+
+ Buffer airfoil set using 189 points
+
+ Blunt trailing edge.  Gap =  0.00252
+
+ Paneling parameters used...
+   Number of panel nodes       140
+   Panel bunching parameter    1.000
+   TE/LE panel density ratio   0.150
+   Refined-area/LE panel density ratio    0.200
+   Top    side refined area x/c limits  1.000 1.000
+   Bottom side refined area x/c limits  1.000 1.000
+
+ XFOIL   c>  
+.OPERi   c>  
+Enter Reynolds number   r>   
+ M  =    0.0000
+ Re =   3000000
+
+.OPERv   c>   Current iteration limit:          10
+
+Enter new iteration limit   i>  
+.OPERv   c>  
+Enter inviscid lift coefficient   r>   Calculating unit vorticity distributions ...
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+ 
+ Solving BL system ...
+ 
+ Initializing BL ...
+    side            1  ...
+ MRCHUE: Inverse mode at  70     Hk =   2.500
+    side            2  ...
+ MRCHUE: Inverse mode at  29     Hk =   2.500
+ MRCHUE: Inverse mode at  72     Hk =   2.500
+ 
+ Side 1  free  transition at x/c =  0.6207   49
+ Side 2  free  transition at x/c =  0.1898   29
+
+   1   rms: 0.7580E-01   max: -.7505E+00   D at   72  2   RLX: 0.666
+       a = -1.827      CL =  0.0113
+      Cm = -0.0471     CD =  0.00561   =>   CDf =  0.00492    CDp =  0.00069
+ 
+ Side 1  free  transition at x/c =  0.6312   49
+ Side 2  free  transition at x/c =  0.1891   30
+
+   2   rms: 0.5411E-01   max: -.5959E+00   D at   73  2   RLX: 0.839
+       a = -1.827      CL =  0.0184
+      Cm = -0.0484     CD =  0.00570   =>   CDf =  0.00494    CDp =  0.00076
+ 
+ Side 1  free  transition at x/c =  0.6435   50
+ Side 2  free  transition at x/c =  0.1929   29
+
+   3   rms: 0.3460E-01   max: -.3436E+00   D at   72  2
+       a = -1.827      CL =  0.0336
+      Cm = -0.0519     CD =  0.00575   =>   CDf =  0.00489    CDp =  0.00086
+ 
+ Side 1  free  transition at x/c =  0.6413   50
+ Side 2  free  transition at x/c =  0.1958   29
+
+   4   rms: 0.7206E-02   max: -.7080E-01   D at   72  2
+       a = -1.827      CL =  0.0366
+      Cm = -0.0525     CD =  0.00578   =>   CDf =  0.00489    CDp =  0.00089
+ 
+ Side 1  free  transition at x/c =  0.6410   50
+ Side 2  free  transition at x/c =  0.1962   30
+
+   5   rms: 0.1189E-02   max: -.1577E-01   D at   29  2
+       a = -1.827      CL =  0.0366
+      Cm = -0.0525     CD =  0.00578   =>   CDf =  0.00488    CDp =  0.00089
+ 
+ Side 1  free  transition at x/c =  0.6410   50
+ Side 2  free  transition at x/c =  0.1971   30
+
+   6   rms: 0.6502E-04   max: -.1156E-02   D at   30  2
+       a = -1.827      CL =  0.0366
+      Cm = -0.0525     CD =  0.00578   =>   CDf =  0.00488    CDp =  0.00089
+
+.OPERv   c>  

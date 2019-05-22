@@ -1,0 +1,11 @@
+naca 0012
+
+oper
+re 3e+06
+mach 0
+visc
+pacc
+
+
+alfa 3
+

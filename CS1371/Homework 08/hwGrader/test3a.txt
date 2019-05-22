@@ -1,0 +1,7 @@
+function name: greenEggsAndHam
+out1 = 'I Am Sam'
+log1 = false
+out2 = 'Sam I Am'
+log2 = false
+out3 = 'Would you eat them on a train?'
+log3 = false

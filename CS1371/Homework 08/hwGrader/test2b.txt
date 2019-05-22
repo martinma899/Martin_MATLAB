@@ -1,0 +1,5 @@
+function name: cinderella
+out1 = 'If the shoe fits...'
+out2 = 'Mary that girl.'
+out3 = 'You must get home before Midnight...'
+out4 = 'Rambler stops running.'

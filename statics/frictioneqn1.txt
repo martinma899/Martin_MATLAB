@@ -1,0 +1,3 @@
+magnitude location ; direction
+
+friction: name location ; direction ; normal force name ; coefficient

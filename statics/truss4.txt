@@ -1,0 +1,31 @@
+X/Y directions
+Nax 1 0
+Nay 0 1
+Nex 1 0
+1 0 -1
+Moment Equation
+Nax 3.4*tand(33)
+1 3.4*2
+Joint A
+Nax 1 0
+Nay 0 1
+Fae 0 1
+Fad 180-33
+Fab -1 0
+Joint B
+Fab 1 0
+Fbd 0 1
+Fbc 180-33
+Joint C
+Fbc -33
+1 0 -1
+Fcd 1 0
+Joint D
+Fde 1 0
+Fad -33
+Fbd 0 -1
+Fcd -1 0
+Joint E
+Nex 1 0
+Fae 0 -1
+Fde -1 0

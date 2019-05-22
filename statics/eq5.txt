@@ -1,0 +1,5 @@
+magnitude location ; direction
+Ry [0 0.6*cosd(31) 0] ; [0 1 0]
+Rx [0 0.6*cosd(31) 0] ; [1 0 0]
+Fbc [0.3*sind(31) 0.3*cosd(31) 0] ; [-0.5+0.3*sind(31) -0.3*cosd(31) 0]
+65*9.8 [0.6*sind(31) 0 0] ; [0 -1 0]

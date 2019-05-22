@@ -1,0 +1,52 @@
+X/Y directions
+32 0 -1
+68 0 -1
+32 0 -1
+Nax 1 0
+Nay 0 1
+Ney 0 1
+Moment Equation
+-32 4.4
+-68 4.4*2
+-32 4.4*3
+Ney 4.4*4
+Joint A
+Fab 4.4 3.7
+Fah 1 0
+Nax 1 0
+Nay 0 1
+Joint B
+Fab -4.4 -3.7
+Fbh 0 -1
+Fbc 1 0
+Joint C
+Fbc -1 0
+Fch -4.4 -3.7
+Fcg 0 -1
+Fcf 4.4 -3.7
+Fcd 1 0
+Joint D
+Fcd -1 0
+Fdf 0 -1
+Fde 4.4 -3.7
+Joint E
+Ney 0 1
+Fde -4.4 3.7
+Fef -1 0
+Joint F
+Ffg -1 0
+Fcf -4.4 3.7
+Fdf 0 1
+Fef 1 0
+32 0 -1
+Joint G
+Fgh -1 0
+Fcg 0 1
+Ffg 1 0
+68 0 -1
+Joint H
+Fah -1 0
+Fbh 0 1
+Fch 4.4 3.7
+Fgh 1 0
+32 0 -1

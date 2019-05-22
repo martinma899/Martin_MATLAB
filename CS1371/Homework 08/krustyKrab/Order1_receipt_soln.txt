@@ -1,0 +1,7 @@
+Name: Patrick Star
+Krabby Patty            $2.00
+Coral Bits              $1.95
+Small Sea Foam Soda     $1.00
+Subtotal=$4.95
+Total=$5.69
+The Krusty Krab, Come spend your money here!

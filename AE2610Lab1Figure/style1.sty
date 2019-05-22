@@ -1,0 +1,204 @@
+#!MC 1410
+$!SETSTYLEBASE FACTORY
+$!PLOTTYPE  = XYLINE
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  SHOWHEADER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 1
+    Y = 0.25
+    }
+  WIDTH = 6.5
+  HEIGHT = 6.5
+$!THREEDAXIS 
+  ASPECTRATIOLIMIT = 25
+  BOXASPECTRATIOLIMIT = 25
+$!GLOBALTIME 
+  SOLUTIONTIME = 0
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-2]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    TEXTSHAPE
+      {
+      FONTFAMILY = 'Times New Roman'
+      HEIGHT = 2
+      }
+    BOX
+      {
+      BOXTYPE = FILLED
+      }
+    XYPOS
+      {
+      X = 77.536
+      Y = 72.737
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 2
+    YAXISVAR = 1
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    SYMBOLSHAPE
+      {
+      GEOMSHAPE = CIRCLE
+      }
+    COLOR = RED
+    FILLCOLOR = RED
+    SIZE = 0.2
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 2
+    YAXISVAR = 1
+    }
+  LINES
+    {
+    COLOR = BLACK
+    LINEPATTERN = DASHED
+    PATTERNLENGTH = 0.5
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    COLOR = GREEN
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  GRIDAREA
+    {
+    DRAWBORDER = YES
+    LINETHICKNESS = 0.2
+    }
+  VIEWPORTPOSITION
+    {
+    X1 = 10
+    Y1 = 10
+    X2 = 90
+    Y2 = 90
+    }
+  VIEWPORTTOPSNAPTARGET = 90
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 186564
+    GRSPACING = 50000
+    TICKS
+      {
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      SHOWATAXISINTERSECTION = NO
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DOTTED
+      PATTERNLENGTH = 0.2
+      }
+    MINORGRIDLINES
+      {
+      SHOW = YES
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TEXT = 'x (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      OFFSET = 5
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 350
+    GRSPACING = 50
+    TICKS
+      {
+      TICKDIRECTION = OUT
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DOTTED
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TEXT = 'Cumulative Distribution Function (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      OFFSET = 7
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!SETSTYLEBASE CONFIG

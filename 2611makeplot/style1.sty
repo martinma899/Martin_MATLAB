@@ -1,0 +1,271 @@
+#!MC 1410
+$!SETSTYLEBASE FACTORY
+$!PLOTTYPE  = XYLINE
+$!FRAMELAYOUT 
+  SHOWHEADER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 1
+    Y = 0.25
+    }
+  WIDTH = 8
+  HEIGHT = 8
+$!THREEDAXIS 
+  ASPECTRATIOLIMIT = 25
+  BOXASPECTRATIOLIMIT = 25
+$!GLOBALTIME 
+  SOLUTIONTIME = 0
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1-4]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    TEXTSHAPE
+      {
+      FONTFAMILY = 'Times New Roman'
+      HEIGHT = 2
+      }
+    BOX
+      {
+      BOXTYPE = FILLED
+      }
+    XYPOS
+      {
+      X = 41.614
+      Y = 86.64
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = RED
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    VAR = 2
+    COLOR = RED
+    }
+$!LINEMAP  [2]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 2
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = GREEN
+    }
+  SYMBOLS
+    {
+    SYMBOLSHAPE
+      {
+      GEOMSHAPE = DEL
+      }
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = GREEN
+    FILLCOLOR = GREEN
+    }
+  ERRORBARS
+    {
+    VAR = 2
+    COLOR = GREEN
+    }
+$!LINEMAP  [3]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 3
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = BLUE
+    }
+  SYMBOLS
+    {
+    SYMBOLSHAPE
+      {
+      GEOMSHAPE = GRAD
+      }
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = BLUE
+    FILLCOLOR = BLUE
+    }
+  ERRORBARS
+    {
+    VAR = 2
+    COLOR = BLUE
+    }
+$!LINEMAP  [4]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 4
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = BLACK
+    }
+  SYMBOLS
+    {
+    SYMBOLSHAPE
+      {
+      GEOMSHAPE = RTRI
+      }
+    COLOR = BLACK
+    FILLCOLOR = CUSTOM1
+    SIZE = 1
+    }
+  BARCHARTS
+    {
+    COLOR = CUSTOM1
+    FILLCOLOR = CUSTOM1
+    }
+  ERRORBARS
+    {
+    VAR = 2
+    COLOR = CUSTOM1
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  GRIDAREA
+    {
+    DRAWBORDER = YES
+    LINETHICKNESS = 0.2
+    }
+  VIEWPORTPOSITION
+    {
+    X1 = 12.882
+    Y1 = 20
+    X2 = 87.882
+    }
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    COORDSCALE = LOG
+    RANGEMIN = 0.004999999888241291
+    RANGEMAX = 10000
+    GRSPACING = 2000
+    TICKS
+      {
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DASHED
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'x (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 1.5444811840482732E-026
+    RANGEMAX = 1
+    GRSPACING = 0.2
+    TICKS
+      {
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DASHED
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TITLEMODE = USETEXT
+      TEXT = 'Cumulative Distribution Function (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!LINEPLOTLAYERS 
+  SHOWSYMBOLS = YES
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 12.02689243027889
+    Y = 7.304116865869858
+    }
+  TEXTSHAPE
+    {
+    FONTFAMILY = 'Times New Roman'
+    }
+  TEXT = 'Figure 2. Modeling Data of Log Normal Cumulative Distribution Function'
+$!SETSTYLEBASE CONFIG

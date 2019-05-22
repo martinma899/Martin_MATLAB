@@ -1,0 +1,5 @@
+magnitude location ; direction
+Fay [0 105*sind(80) 0] ; [0 1 0]
+Fax [0 105*sind(80) 0] ; [1 0 0]
+Fbc [105*cosd(80) 0 0] ; [-105*cosd(80) -105*sind(80) 0]
+275 [305*sind(80) 105*sind(80)+305*cosd(80) 0] ; [105*cosd(80) -105*sind(80) 0]

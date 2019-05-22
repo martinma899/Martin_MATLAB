@@ -1,0 +1,4 @@
+function name: cheezeGrader
+out1 = 'The first judge is Swiss-topher McCheddar'
+out2 = 'The second judge is Brie-anna Roquefort'
+out3 = 'The third judge is Mr. Monterey Jack'

@@ -1,0 +1,26 @@
+X/Y directions
+Nax 0
+Nay 90
+125 0 -1
+Nc -4 9
+Moment Equation
+-125 6
+Nc 15*9/sqrt(97)
+Joint A
+Fad 1 0
+Fab 6 -4
+Nay 0 1
+Nax 1 0
+Joint B
+125 0 -1
+Fcb 9 4
+Fab -6 4
+Fbd 0 1
+Joint C
+Nc -4 9
+Fcb -9 -4
+Fcd -1 0
+Joint D
+Fad -1 0
+Fcd 1 0
+Fbd 0 -1

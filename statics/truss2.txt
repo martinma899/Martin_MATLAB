@@ -1,0 +1,21 @@
+X/Y directions
+Nax 0
+Nay 90
+160 0 -1
+Nc -2 7
+Moment Equation
+-160 7
+Nay 4+7
+Joint A
+Fab -4 2
+Fac -1 0
+Nay 0 1
+Nax 1 0
+Joint B
+160 0 -1
+Fab 4 -2
+Fbc -7 -2
+Joint C
+Nc -2 7
+Fac 1 0
+Fbc 7 2

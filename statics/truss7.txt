@@ -1,0 +1,41 @@
+X/Y directions
+2000 1 0
+Rgq 6 8
+Rdq -6 8
+Rdc 0 1
+Moment Equation
+2000 8
+Rdc -6
+Joint A
+Fab 6 -8
+Fae 0 -1
+400 1 0
+Joint B
+Fab -6 8
+Fbe -1 0
+Fbq -6 -8
+Fbc 0 -1
+Joint C
+Fbc 0 1
+Fcq -1 0
+Fcd 0 -1
+Joint D
+Fcd 0 1
+Fdq -6 8
+Rdc 0 1
+Rdq -6 8
+Joint E
+Fae 0 1
+Fbe 1 0
+Feq 0 -1
+1200 1 0
+Joint G
+Fgq 6 8
+Rgq 6 8
+Joint Q
+Feq 0 1
+Fbq 6 8
+Fcq 1 0
+Fdq 6 -8
+Fgq -6 -8
+400 1 0

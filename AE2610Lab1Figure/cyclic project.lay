@@ -1,0 +1,249 @@
+#!MC 1410
+$!VarSet |LFDSRN1| = 'Text Spreadsheet Loader'
+$!VarSet |LFDSVL1| = ''
+$!VarSet |LFDSFN1| = '"M" "FC:\Users\Marti\OneDrive\Documents\MATLAB\AE2610Lab1Figure\cyclic.csv" "I1" "D,"'
+$!SETSTYLEBASE FACTORY
+$!PLOTOPTIONS 
+  SUBDIVIDEALLCELLS = NO
+$!GLOBALPAPER 
+  PAPERSIZEINFO
+    {
+    LETTER
+      {
+      WIDTH = 8.5
+      HEIGHT = 11
+      LEFTHARDCLIPOFFSET = 0.125
+      RIGHTHARDCLIPOFFSET = 0.125
+      TOPHARDCLIPOFFSET = 0.125
+      BOTTOMHARDCLIPOFFSET = 0.125
+      }
+    }
+$!PAGE 
+  NAME = 'Untitled'
+  PAPERATTRIBUTES
+    {
+    BACKGROUNDCOLOR = WHITE
+    ISTRANSPARENT = YES
+    ORIENTPORTRAIT = NO
+    SHOWGRID = YES
+    SHOWRULER = NO
+    SHOWPAPER = NO
+    PAPERSIZE = LETTER
+    RULERSPACING = ONEINCH
+    PAPERGRIDSPACING = HALFINCH
+    REGIONINWORKAREA
+      {
+      X1 = 1
+      Y1 = 0.25
+      X2 = 10
+      Y2 = 8.25
+      }
+    }
+### Frame Number 1 ###
+$!READDATASET  '|LFDSFN1|'
+  DATASETREADER = '|LFDSRN1|'
+  VARNAMELIST = '|LFDSVL1|'
+  INITIALPLOTTYPE = XYLINE
+$!REMOVEVAR |LFDSRN1|
+$!REMOVEVAR |LFDSVL1|
+$!REMOVEVAR |LFDSFN1|
+$!DELETEVARS  [1]
+$!DELETEVARS  [1]
+$!DELETEVARS  [2]
+$!RENAMEDATASETVAR 
+  VAR = 1
+  NAME = 'Engineering Strain (%)'
+$!RENAMEDATASETVAR 
+  VAR = 2
+  NAME = 'Engineering Stress (MPa)'
+$!RENAMEDATASETVAR 
+  VAR = 1
+  NAME = 'Engineering Tensile Strain (%)'
+$!RENAMEDATASETZONE 
+  ZONE = 1
+  NAME = 'Zone 1'
+$!RENAMEDATASETZONE 
+  ZONE = 1
+  NAME = 'Extensometer Measurement'
+$!FRAMELAYOUT 
+  SHOWBORDER = NO
+  SHOWHEADER = NO
+  HEADERCOLOR = RED
+  XYPOS
+    {
+    X = 0
+    Y = 0.25
+    }
+  WIDTH = 12
+  HEIGHT = 8
+$!THREEDAXIS 
+  ASPECTRATIOLIMIT = 25
+  BOXASPECTRATIOLIMIT = 25
+$!PLOTTYPE  = XYLINE
+$!FRAMENAME  = 'Frame 001'
+$!GLOBALTIME 
+  SOLUTIONTIME = 0
+$!DELETELINEMAPS 
+$!ACTIVELINEMAPS  =  [1]
+$!GLOBALLINEPLOT 
+  DATALABELS
+    {
+    DISTANCESKIP = 5
+    }
+  LEGEND
+    {
+    SHOW = YES
+    TEXTSHAPE
+      {
+      FONTFAMILY = 'Times New Roman'
+      HEIGHT = 2
+      }
+    BOX
+      {
+      BOXTYPE = FILLED
+      }
+    XYPOS
+      {
+      X = 75.228
+      Y = 67.783
+      }
+    }
+$!LINEMAP  [1]
+  NAME = '&ZN&'
+  ASSIGN
+    {
+    ZONE = 1
+    XAXISVAR = 1
+    YAXISVAR = 2
+    }
+  LINES
+    {
+    COLOR = RED
+    LINETHICKNESS = 0.2
+    }
+  SYMBOLS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  BARCHARTS
+    {
+    COLOR = RED
+    FILLCOLOR = RED
+    }
+  ERRORBARS
+    {
+    VAR = 2
+    COLOR = RED
+    }
+$!XYLINEAXIS 
+  DEPXTOYRATIO = 1
+  GRIDAREA
+    {
+    DRAWBORDER = YES
+    LINETHICKNESS = 0.2
+    }
+  VIEWPORTPOSITION
+    {
+    X1 = 10
+    Y1 = 15
+    X2 = 90
+    Y2 = 90
+    }
+  VIEWPORTTOPSNAPTARGET = 90
+$!XYLINEAXIS 
+  XDETAIL 1
+    {
+    RANGEMIN = -0.00020000000000000001
+    RANGEMAX = 17.474447290000001
+    AUTOGRID = NO
+    GRSPACING = 5
+    TICKS
+      {
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      SHOWATAXISINTERSECTION = NO
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DASHED
+      PATTERNLENGTH = 0.5
+      }
+    MINORGRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DASHED
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TEXT = 'x (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!XYLINEAXIS 
+  YDETAIL 1
+    {
+    RANGEMIN = 0
+    RANGEMAX = 350
+    GRSPACING = 50
+    TICKS
+      {
+      LINETHICKNESS = 0.2
+      }
+    TICKLABEL
+      {
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        }
+      }
+    GRIDLINES
+      {
+      SHOW = YES
+      LINEPATTERN = DASHED
+      PATTERNLENGTH = 0.5
+      }
+    TITLE
+      {
+      TEXT = 'Cumulative Distribution Function (-)'
+      TEXTSHAPE
+        {
+        FONTFAMILY = 'Times New Roman'
+        HEIGHT = 2.5
+        }
+      }
+    AXISLINE
+      {
+      LINETHICKNESS = 0.2
+      }
+    }
+$!ATTACHTEXT 
+  ANCHORPOS
+    {
+    X = 37.46587723181346
+    Y = 3.98406374501995
+    }
+  TEXTSHAPE
+    {
+    FONTFAMILY = 'Times New Roman'
+    }
+  TEXT = 'Stress - Strain Plot of Cyclic Tensile Test'
+$!FRAMECONTROL ACTIVATEBYNUMBER
+  FRAME = 1
+$!SETSTYLEBASE CONFIG

@@ -1,0 +1,9 @@
+n = 3; 
+m = 5; 
+randmatrix = randi([0 15],m,m);
+symmetricmatrix = triu(randmatrix)+triu(randmatrix,1)';
+[P,~] = eig(symmetricmatrix);
+orthonormalmatrix = P(:,1:n);
+xvec = randi([0 15],n,1);
+normAx = norm(orthonormalmatrix*xvec)
+normx = norm(xvec)
