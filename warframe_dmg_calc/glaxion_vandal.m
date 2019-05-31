@@ -19,7 +19,7 @@ mM = 0; % magazine size multiplier
 
 DMT = 1+DM % total damage multiplier
 MMT = 1+MM % total multishot multiplier
-CMT = 1+(CM*(1+CMM)-1)*CC*(1+CCM) % total crit multiplier
+CMT = (1+(CM*(1+CMM)-1)*CC*(1+CCM))/(1+(CM-1)*CC) % total crit multiplier
 UTMT = (1/(FR*(1+FRM))+1/(RLS*m*(1+RLSM)*(1+mM)))^(-1)...
   /(1/FR+1/(RLS*m))^(-1) % total utility multiplier
 TMT = DMT*MMT*CMT*UTMT % total multiplier
