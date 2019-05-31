@@ -22,14 +22,33 @@ Elemental_Ninety_1 = struct('name','Elemental Ninety #1','DM',0.9,...
   'MM',0,'FRM',0,'CCM',0,'CMM',0,'RLSM',0,'mM',0);
 Elemental_Ninety_2 = struct('name','Elemental Ninety #2','DM',0.9,...
   'MM',0,'FRM',0,'CCM',0,'CMM',0,'RLSM',0,'mM',0);
+Elemental_Ninety_3 = struct('name','Elemental Ninety #3','DM',0.9,...
+  'MM',0,'FRM',0,'CCM',0,'CMM',0,'RLSM',0,'mM',0);
 Gunslinger = struct('name','Gunslinger','DM',0,'MM',0,'FRM',0.72,...
   'CCM',0,'CMM',0,'RLSM',0,'mM',0);
 Quickdraw = struct('name','Quickdraw','DM',0,'MM',0,'FRM',0,...
   'CCM',0,'CMM',0,'RLSM',0.48,'mM',0);
 Slip_Magazine = struct('name','Slip Magazine','DM',0,'MM',0,'FRM',0,...
   'CCM',0,'CMM',0,'RLSM',0,'mM',0.3);
-Magnum_Force = struct('name','Magnum Force','DM',1.35,'MM',0,'FRM',0,...
+Magnum_Force = struct('name','Magnum Force','DM',1.65,'MM',0,'FRM',0,...
   'CCM',0,'CMM',0,'RLSM',0,'mM',0);
+Anemic_Agility = struct('name','Anemic Agility','DM',-0.15,'MM',0,'FRM',0.9,...
+  'CCM',0,'CMM',0,'RLSM',0,'mM',0);
+Creeping_Bullseye = struct('name','Creeping Bullseye','DM',0,'MM',0,'FRM',-0.36,...
+  'CCM',0.48,'CMM',0,'RLSM',0,'mM',0);
+Hollow_Point = struct('name','Hollow Point','DM',-0.15,'MM',0,'FRM',0,...
+  'CCM',0,'CMM',0.6,'RLSM',0,'mM',0);
+Hydrhaulic_Crosshair = struct('name','Hydrhaulic Crosshair','DM',0,'MM',0,'FRM',0,...
+  'CCM',1.35,'CMM',0,'RLSM',0,'mM',0);
+Ice_Storm = struct('name','Ice Storm','DM',0.4,'MM',0,'FRM',0,...
+  'CCM',0,'CMM',0,'RLSM',0,'mM',0.4);
+Sharpened_Bullets = struct('name','Sharpened Bullets','DM',0,'MM',0,'FRM',0,...
+  'CCM',0,'CMM',0.75,'RLSM',0,'mM',0);
+Stunning_Speed = struct('name','Stunning Speed','DM',0,'MM',0,'FRM',0,...
+  'CCM',0,'CMM',0,'RLSM',0.4,'mM',0);
+Tainted_Clip = struct('name','Tainted Clip','DM',0,'MM',0,'FRM',0,...
+  'CCM',0,'CMM',0,'RLSM',-0.3,'mM',0.6);
+
 
 %% put desirable mods in arsenal
 mods = [Hornet_Strike;
@@ -41,14 +60,23 @@ mods = [Hornet_Strike;
   Elemental_Sixty_2;
   Elemental_Ninety_1;
   Elemental_Ninety_2;
+  Elemental_Ninety_3;
   Gunslinger;
   Quickdraw;
   Magnum_Force;
-  Augur_Pact;
-  % Slip_Magazine;
+  %Augur_Pact;
+  %Slip_Magazine;
+  Anemic_Agility;
+  Creeping_Bullseye;
+  Hollow_Point;
+  Hydrhaulic_Crosshair;
+  %Ice_Storm;
+  %Sharpened_Bullets;
+  %Stunning_Speed;
+  %Tainted_Clip;
   ];
 %% choose mandatory mods (to reduce computation time)
-mandatory_mods_arr = [6 7];
+mandatory_mods_arr = [8 9];
 
 %% display all mods in arsenal
 fprintf('\n--> Display All The Mods In Arsenal: <--\n\n')
@@ -86,7 +114,7 @@ wpb.MCMT = 1; % modded crit contribution multiplier.
 wpb.AVDPSMT = 1; % total average DPS multiplier
 wpb.BDPSMT = 1; % total burst DPS multiplier
 
-wpb.build = []; % mods equipped
+wpb.build = [1 2 3 4]; % mods equipped
 wpb.avg_dps = wpb.d*(1+(wpb.CM-1)*wpb.CC)*...
   (1/wpb.FR+1/(wpb.RLS*wpb.m))^(-1); % average dps
 wpb.burst_dps = wpb.d*(1+(wpb.CM-1)*wpb.CC)*(1/wpb.FR)^(-1); % burst dps
@@ -101,9 +129,20 @@ all_mods = 1:mods_total;
 remaining_mods = setdiff(all_mods,mandatory_mods_arr);
 
 all_remaining_mods_combs = combnk(remaining_mods,num_open_mod_slots);
+num_builds = size(all_remaining_mods_combs,1);
 all_builds = [];
-for i = 1:size(all_remaining_mods_combs,1)
+for i = 1:num_builds
   all_builds = [all_builds;[mandatory_mods_arr all_remaining_mods_combs(i,:)]];
+end
+
+fprintf('\nNumber of builds to be calculated: %d\n',num_builds)
+inp = input('continue? y/n\n','s');
+switch inp
+  case 'y'
+    fprintf('proceeding to compute build stats')
+  otherwise
+    fprintf('\mission aborted.')
+    return;
 end
 
 wp_arr = [];
@@ -135,17 +174,18 @@ for i = 1:size(all_builds,1)
   wp.AFRMT = wp.AFR/wpb.AFR; % total average fire rate multiplier
   wp.BCMT = 1+(wp.CM-1)*wp.CC; % total base crit multiplier.
   % this is crit dps increase comparing to the non-critting weapon.
-  wp.MCMT = wp.CMT1/wpb.CMT1; % total modded crit multiplier.
+  wp.MCMT = wp.BCMT/wpb.BCMT; % total modded crit multiplier.
   % this is crit dps increase comparing to the unmodded critting weapon.
   
-  wp.avg_dps = wp.d*wp.CMT1*wp.AFR; % average dps
-  wp.burst_dps = wp.d*wp.CMT1*wp.FR; % burst dps
+  wp.avg_dps = wp.d*wp.BCMT*wp.AFR; % average dps
+  wp.burst_dps = wp.d*wp.BCMT*wp.FR; % burst dps
   
-  wp.AVDPSMT = wp.DMT*wp.MMT*wp.MCMT*wp.FRMT; % total average dps multiplier
-  
-  
+  wp.AVDPSMT = wp.DMT*wp.MMT*wp.MCMT*wp.AFRMT; % total average dps multiplier
+  wp.BDPSMT = wp.DMT*wp.MMT*wp.MCMT*wp.FRMT; % total burst dps multiplier
   
   wp_arr = [wp_arr wp];
+  
+  fprintf('%5.2f percent complete\n',i/)
 end
 
 avg_dps_arr = [wp_arr.avg_dps]'; % extract average dps arr
@@ -154,15 +194,17 @@ wp_arr = wp_arr(ind);
 [avg_dps_arr,ind] = sort(avg_dps_arr,'descend'); % sort avg_dps_arr and wp_arr
 wp_arr = wp_arr(ind);
 
-%% output results
-optGun = wp_arr(1);
-disp(optGun)
+%% output top ten builds
+
 mod_name_arr = {mods.name}';
-disp(mod_name_arr(optGun.build))
-% disp(avg_dps_arr(1:10));
-
-bar(avg_dps_arr)
-
+num_builds = 20;
+for i = 20:-1:1
+  fprintf('\n\n--> Build Ranking #%d <--\n\n',i)
+  disp(mod_name_arr(wp_arr(i).build))
+  fprintf('\nAverage DPS: %10.2f\n',wp_arr(i).avg_dps);
+  fprintf('  Burst DPS: %10.2f\n',wp_arr(i).burst_dps);
+  fprintf('avg DPS as percent of top build: %4.2f\n\n',wp_arr(i).avg_dps/wp_arr(1).avg_dps);
+end
 
 
 
