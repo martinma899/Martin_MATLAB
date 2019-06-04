@@ -1,0 +1,728 @@
+--> Mandatory Mods <--
+
+ 1           Hornet_Strike   DM  +2.20 
+27               Ice_Storm   DM  +0.40    mM  +0.40 
+
+--> Flexible Mods <--
+
+ 3        Barrel_Diffusion   MM  +1.20 
+ 4          Lethal_Torrent   MM  +0.60   FRM  +0.60 
+ 5    Primed_Pistol_Gambit  CCM  +1.53 
+ 6   Primed_Target_Cracker  CMM  +0.90 
+ 7               Expel_Mod  FDM  +0.30 
+ 9              Augur_Pact   DM  +0.90 
+12      Elemental_Ninety_1   DM  +0.90 
+13      Elemental_Ninety_2   DM  +0.90 
+19               Quickdraw RLSM  +0.48 
+21           Slip_Magazine   mM  +0.30 
+23       Creeping_Bullseye  FRM  -0.36   CCM  +0.48 
+24            Hollow_Point   DM  -0.15   CMM  +0.60 
+28          Stunning_Speed RLSM  +0.40 
+
+--> Excluded Mods <--
+
+ 2            Magnum_Force   DM  +1.35 
+ 8        Primed_Expel_Mod  FDM  +0.45 
+10       Elemental_Sixty_1   DM  +0.60 
+11       Elemental_Sixty_2   DM  +0.60 
+14      Elemental_Ninety_3   DM  +0.90 
+15      Primed_Elemental_1   DM  +1.35 
+16      Primed_Elemental_2   DM  +1.35 
+17              Gunslinger  FRM  +0.72 
+18          Anemic_Agility   DM  -0.15   FRM  +0.90 
+20        Primed_Quickdraw RLSM  +0.72 
+22    Primed_Slip_Magazine   mM  +0.45 
+25    Hydrhaulic_Crosshair  CCM  +1.35 
+26       Sharpened_Bullets  CMM  +0.75 
+29            Tainted_Clip RLSM  -0.30    mM  +0.60 
+
+--> Build Ranking #1 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:   11463.54
+  Burst DPS:   16704.01
+avg DPS as percent of top build: 100.00%
+
+--> Build Ranking #2 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:   10664.22
+  Burst DPS:   15539.29
+avg DPS as percent of top build: 93.03%
+
+--> Build Ranking #3 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:   10581.73
+  Burst DPS:   15419.09
+avg DPS as percent of top build: 92.31%
+
+--> Build Ranking #4 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:   10343.22
+  Burst DPS:   15071.55
+avg DPS as percent of top build: 90.23%
+
+--> Build Ranking #5 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:   10209.65
+  Burst DPS:   13363.21
+avg DPS as percent of top build: 89.06%
+
+--> Build Ranking #6 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:   10073.81
+  Burst DPS:   13363.21
+avg DPS as percent of top build: 87.88%
+
+--> Build Ranking #7 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    9899.04
+  Burst DPS:   14424.31
+avg DPS as percent of top build: 86.35%
+
+--> Build Ranking #8 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_2
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:    9816.97
+  Burst DPS:   12849.24
+avg DPS as percent of top build: 85.64%
+
+--> Build Ranking #9 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    9708.32
+  Burst DPS:   13363.21
+avg DPS as percent of top build: 84.69%
+
+--> Build Ranking #10 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_2
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    9686.35
+  Burst DPS:   12849.24
+avg DPS as percent of top build: 84.50%
+
+--> Build Ranking #11 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:    9613.96
+  Burst DPS:   14008.91
+avg DPS as percent of top build: 83.87%
+
+--> Build Ranking #12 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:    9352.89
+  Burst DPS:   13628.50
+avg DPS as percent of top build: 81.59%
+
+--> Build Ranking #13 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_2
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    9334.92
+  Burst DPS:   12849.24
+avg DPS as percent of top build: 81.43%
+
+--> Build Ranking #14 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    9190.09
+  Burst DPS:   13391.27
+avg DPS as percent of top build: 80.17%
+
+--> Build Ranking #15 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+                Augur_Pact
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:    9185.75
+  Burst DPS:   13384.95
+avg DPS as percent of top build: 80.13%
+
+--> Build Ranking #16 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Quickdraw
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    9132.46
+  Burst DPS:   11953.30
+avg DPS as percent of top build: 79.67%
+
+--> Build Ranking #17 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+              Hollow_Point
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    9010.95
+  Burst DPS:   11953.30
+avg DPS as percent of top build: 78.61%
+
+--> Build Ranking #18 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:    8919.14
+  Burst DPS:   11674.09
+avg DPS as percent of top build: 77.80%
+
+--> Build Ranking #19 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8800.47
+  Burst DPS:   11674.09
+avg DPS as percent of top build: 76.77%
+
+--> Build Ranking #20 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8782.87
+  Burst DPS:   12797.89
+avg DPS as percent of top build: 76.62%
+
+--> Build Ranking #21 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:    8765.37
+  Burst DPS:   11472.81
+avg DPS as percent of top build: 76.46%
+
+--> Build Ranking #22 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+                 Quickdraw
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8740.27
+  Burst DPS:   11439.97
+avg DPS as percent of top build: 76.24%
+
+--> Build Ranking #23 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+             Slip_Magazine
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8684.02
+  Burst DPS:   11953.30
+avg DPS as percent of top build: 75.75%
+
+--> Build Ranking #24 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8679.27
+  Burst DPS:   12646.93
+avg DPS as percent of top build: 75.71%
+
+--> Build Ranking #25 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:    8676.94
+  Burst DPS:   11357.08
+avg DPS as percent of top build: 75.69%
+
+--> Build Ranking #26 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8648.74
+  Burst DPS:   11472.81
+avg DPS as percent of top build: 75.45%
+
+--> Build Ranking #27 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                Augur_Pact
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:    8627.91
+  Burst DPS:   12572.10
+avg DPS as percent of top build: 75.26%
+
+--> Build Ranking #28 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+              Hollow_Point
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8623.98
+  Burst DPS:   11439.97
+avg DPS as percent of top build: 75.23%
+
+--> Build Ranking #29 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8561.49
+  Burst DPS:   11357.08
+avg DPS as percent of top build: 74.68%
+
+--> Build Ranking #30 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+                 Expel_Mod
+        Elemental_Ninety_2
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    8481.18
+  Burst DPS:   11674.09
+avg DPS as percent of top build: 73.98%
+
+--> Build Ranking #31 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+        Elemental_Ninety_2
+                 Quickdraw
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8477.19
+  Burst DPS:   11095.63
+avg DPS as percent of top build: 73.95%
+
+--> Build Ranking #32 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                Augur_Pact
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+
+Average DPS:    8393.62
+  Burst DPS:   12230.70
+avg DPS as percent of top build: 73.22%
+
+--> Build Ranking #33 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Expel_Mod
+         Creeping_Bullseye
+                 Ice_Storm
+
+Average DPS:    8369.62
+  Burst DPS:   11334.86
+avg DPS as percent of top build: 73.01%
+
+--> Build Ranking #34 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8364.39
+  Burst DPS:   11095.63
+avg DPS as percent of top build: 72.97%
+
+--> Build Ranking #35 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    8334.95
+  Burst DPS:   11472.81
+avg DPS as percent of top build: 72.71%
+
+--> Build Ranking #36 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+             Slip_Magazine
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8311.09
+  Burst DPS:   11439.97
+avg DPS as percent of top build: 72.50%
+
+--> Build Ranking #37 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Quickdraw
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8268.75
+  Burst DPS:   10279.39
+avg DPS as percent of top build: 72.13%
+
+--> Build Ranking #38 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+                 Expel_Mod
+        Elemental_Ninety_2
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    8250.87
+  Burst DPS:   11357.08
+avg DPS as percent of top build: 71.97%
+
+--> Build Ranking #39 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Quickdraw
+                 Ice_Storm
+
+Average DPS:    8233.06
+  Burst DPS:   10776.08
+avg DPS as percent of top build: 71.82%
+
+--> Build Ranking #40 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+                 Quickdraw
+             Slip_Magazine
+                 Ice_Storm
+
+Average DPS:    8194.85
+  Burst DPS:   10279.39
+avg DPS as percent of top build: 71.49%
+
+--> Build Ranking #41 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8123.51
+  Burst DPS:   10776.08
+avg DPS as percent of top build: 70.86%
+
+--> Build Ranking #42 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+                 Expel_Mod
+        Elemental_Ninety_2
+                 Quickdraw
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8101.56
+  Burst DPS:   10603.97
+avg DPS as percent of top build: 70.67%
+
+--> Build Ranking #43 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+             Slip_Magazine
+                 Ice_Storm
+            Stunning_Speed
+
+Average DPS:    8100.98
+  Burst DPS:   10279.39
+avg DPS as percent of top build: 70.67%
+
+--> Build Ranking #44 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+        Elemental_Ninety_2
+             Slip_Magazine
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8060.92
+  Burst DPS:   11095.63
+avg DPS as percent of top build: 70.32%
+
+--> Build Ranking #45 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+     Primed_Target_Cracker
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+              Hollow_Point
+                 Ice_Storm
+
+Average DPS:    8057.68
+  Burst DPS:   11741.18
+avg DPS as percent of top build: 70.29%
+
+--> Build Ranking #46 <--
+
+             Hornet_Strike
+          Barrel_Diffusion
+            Lethal_Torrent
+      Primed_Pistol_Gambit
+     Primed_Target_Cracker
+        Elemental_Ninety_2
+         Creeping_Bullseye
+                 Ice_Storm
+
+Average DPS:    8047.71
+  Burst DPS:   10898.90
+avg DPS as percent of top build: 70.20%
+

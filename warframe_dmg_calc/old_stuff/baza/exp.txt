@@ -1,0 +1,680 @@
+--> Mandatory Mods <--
+
+ 1               Serration   DM  +1.65 
+ 9       Elemental_Sixty_1   DM  +0.60 
+10       Elemental_Sixty_2   DM  +0.60 
+
+--> Flexible Mods <--
+
+ 3           Split_Chamber   MM  +0.90 
+ 4            Point_Strike  CCM  +1.50 
+ 5             Vital_Sense  CMM  +1.20 
+ 6         Primed_Bane_Mod  FDM  +0.45 
+ 7             Argon_Scope  CCM  +1.35 
+ 8           Bladed_Rounds  CMM  +1.20 
+11      Elemental_Ninety_1   DM  +0.90 
+12      Elemental_Ninety_2   DM  +0.90 
+14     Vigilante_Armaments   MM  +0.60 
+15              Fast_Hands RLSM  +0.30 
+16             Hammer_Shot  CMM  +0.60 
+17           Magazine_Warp   mM  +0.30 
+25                Wildfire   DM  +0.60    mM  +0.20 
+26          Critical_Delay  FRM  -0.36   CCM  +0.48 
+
+--> Excluded Mods <--
+
+ 2           Heavy_Caliber   DM  +1.50 
+13      Elemental_Ninety_3   DM  +0.90 
+18                Bane_Mod   DM  +0.30 
+19      Primed_Cryo_Rounds   DM  +1.65 
+20       Primed_Fast_Hands RLSM  +0.55 
+21            Primed_Shred  FRM  +0.55 
+22                   Shred  FRM  +0.30 
+23           Speed_Trigger  FRM  +0.60 
+24       Vile_Acceleration   DM  -0.15   FRM  +0.90 
+
+--> Build Ranking #1 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+
+Average DPS:   12579.32
+  Burst DPS:   19918.73
+avg DPS as percent of top build: 100.00%
+
+--> Build Ranking #2 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+
+Average DPS:   12470.65
+  Burst DPS:   19746.65
+avg DPS as percent of top build: 99.14%
+
+--> Build Ranking #3 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+
+Average DPS:   11829.61
+  Burst DPS:   18731.59
+avg DPS as percent of top build: 94.04%
+
+--> Build Ranking #4 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+
+Average DPS:   11801.73
+  Burst DPS:   18687.46
+avg DPS as percent of top build: 93.82%
+
+--> Build Ranking #5 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   11316.38
+  Burst DPS:   17918.92
+avg DPS as percent of top build: 89.96%
+
+--> Build Ranking #6 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10907.82
+  Burst DPS:   17271.99
+avg DPS as percent of top build: 86.71%
+
+--> Build Ranking #7 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10734.67
+  Burst DPS:   16997.81
+avg DPS as percent of top build: 85.34%
+
+--> Build Ranking #8 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10709.38
+  Burst DPS:   16957.76
+avg DPS as percent of top build: 85.13%
+
+--> Build Ranking #9 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+
+Average DPS:   10610.94
+  Burst DPS:   16801.89
+avg DPS as percent of top build: 84.35%
+
+--> Build Ranking #10 <--
+
+                 Serration
+              Point_Strike
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10593.11
+  Burst DPS:   16773.67
+avg DPS as percent of top build: 84.21%
+
+--> Build Ranking #11 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+                  Wildfire
+
+Average DPS:   10591.19
+  Burst DPS:   15740.72
+avg DPS as percent of top build: 84.20%
+
+--> Build Ranking #12 <--
+
+                 Serration
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10501.60
+  Burst DPS:   16628.75
+avg DPS as percent of top build: 83.48%
+
+--> Build Ranking #13 <--
+
+                 Serration
+             Split_Chamber
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:   10394.40
+  Burst DPS:   16459.01
+avg DPS as percent of top build: 82.63%
+
+--> Build Ranking #14 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+
+Average DPS:   10380.29
+  Burst DPS:   16436.68
+avg DPS as percent of top build: 82.52%
+
+--> Build Ranking #15 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+
+Average DPS:   10359.23
+  Burst DPS:   16403.31
+avg DPS as percent of top build: 82.35%
+
+--> Build Ranking #16 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+
+Average DPS:   10227.85
+  Burst DPS:   16195.29
+avg DPS as percent of top build: 81.31%
+
+--> Build Ranking #17 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+                  Wildfire
+
+Average DPS:   10208.82
+  Burst DPS:   15172.43
+avg DPS as percent of top build: 81.16%
+
+--> Build Ranking #18 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+
+Average DPS:   10065.50
+  Burst DPS:   15938.21
+avg DPS as percent of top build: 80.02%
+
+--> Build Ranking #19 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+                  Wildfire
+
+Average DPS:   10046.76
+  Burst DPS:   14931.58
+avg DPS as percent of top build: 79.87%
+
+--> Build Ranking #20 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+
+Average DPS:   10042.07
+  Burst DPS:   15901.11
+avg DPS as percent of top build: 79.83%
+
+--> Build Ranking #21 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+
+Average DPS:   10041.78
+  Burst DPS:   15900.66
+avg DPS as percent of top build: 79.83%
+
+--> Build Ranking #22 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+                  Wildfire
+
+Average DPS:   10023.09
+  Burst DPS:   14896.40
+avg DPS as percent of top build: 79.68%
+
+--> Build Ranking #23 <--
+
+                 Serration
+               Vital_Sense
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:    9961.77
+  Burst DPS:   15773.97
+avg DPS as percent of top build: 79.19%
+
+--> Build Ranking #24 <--
+
+                 Serration
+              Point_Strike
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+
+Average DPS:    9938.30
+  Burst DPS:   15736.81
+avg DPS as percent of top build: 79.01%
+
+--> Build Ranking #25 <--
+
+                 Serration
+             Split_Chamber
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+
+Average DPS:    9864.67
+  Burst DPS:   15620.22
+avg DPS as percent of top build: 78.42%
+
+--> Build Ranking #26 <--
+
+                 Serration
+             Split_Chamber
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+
+Average DPS:    9746.44
+  Burst DPS:   15433.00
+avg DPS as percent of top build: 77.48%
+
+--> Build Ranking #27 <--
+
+                 Serration
+             Split_Chamber
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+                  Wildfire
+
+Average DPS:    9728.30
+  Burst DPS:   14458.28
+avg DPS as percent of top build: 77.34%
+
+--> Build Ranking #28 <--
+
+                 Serration
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+
+Average DPS:    9600.01
+  Burst DPS:   15201.14
+avg DPS as percent of top build: 76.32%
+
+--> Build Ranking #29 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+
+Average DPS:    9513.47
+  Burst DPS:   15064.11
+avg DPS as percent of top build: 75.63%
+
+--> Build Ranking #30 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+               Hammer_Shot
+
+Average DPS:    9419.51
+  Burst DPS:   14915.32
+avg DPS as percent of top build: 74.88%
+
+--> Build Ranking #31 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+             Magazine_Warp
+
+Average DPS:    9399.71
+  Burst DPS:   13618.38
+avg DPS as percent of top build: 74.72%
+
+--> Build Ranking #32 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+       Vigilante_Armaments
+
+Average DPS:    9281.17
+  Burst DPS:   14696.27
+avg DPS as percent of top build: 73.78%
+
+--> Build Ranking #33 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+                  Wildfire
+
+Average DPS:    9263.90
+  Burst DPS:   13768.09
+avg DPS as percent of top build: 73.64%
+
+--> Build Ranking #34 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+             Magazine_Warp
+
+Average DPS:    9060.35
+  Burst DPS:   13126.71
+avg DPS as percent of top build: 72.03%
+
+--> Build Ranking #35 <--
+
+                 Serration
+             Split_Chamber
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+               Hammer_Shot
+
+Average DPS:    8951.61
+  Burst DPS:   14174.43
+avg DPS as percent of top build: 71.16%
+
+--> Build Ranking #36 <--
+
+                 Serration
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+       Vigilante_Armaments
+
+Average DPS:    8935.53
+  Burst DPS:   14148.96
+avg DPS as percent of top build: 71.03%
+
+--> Build Ranking #37 <--
+
+                 Serration
+              Point_Strike
+               Vital_Sense
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+                  Wildfire
+
+Average DPS:    8918.90
+  Burst DPS:   13255.34
+avg DPS as percent of top build: 70.90%
+
+--> Build Ranking #38 <--
+
+                 Serration
+             Split_Chamber
+               Vital_Sense
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+             Magazine_Warp
+
+Average DPS:    8916.53
+  Burst DPS:   12918.34
+avg DPS as percent of top build: 70.88%
+
+--> Build Ranking #39 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+             Magazine_Warp
+
+Average DPS:    8895.52
+  Burst DPS:   12887.90
+avg DPS as percent of top build: 70.72%
+
+--> Build Ranking #40 <--
+
+                 Serration
+             Split_Chamber
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+       Vigilante_Armaments
+
+Average DPS:    8844.32
+  Burst DPS:   14004.53
+avg DPS as percent of top build: 70.31%
+
+--> Build Ranking #41 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+        Elemental_Ninety_2
+               Hammer_Shot
+
+Average DPS:    8832.32
+  Burst DPS:   13985.53
+avg DPS as percent of top build: 70.21%
+
+--> Build Ranking #42 <--
+
+                 Serration
+             Split_Chamber
+               Argon_Scope
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+       Vigilante_Armaments
+                  Wildfire
+
+Average DPS:    8827.86
+  Burst DPS:   13120.04
+avg DPS as percent of top build: 70.18%
+
+--> Build Ranking #43 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+             Bladed_Rounds
+         Elemental_Sixty_1
+         Elemental_Sixty_2
+               Hammer_Shot
+                  Wildfire
+
+Average DPS:    8815.88
+  Burst DPS:   13102.23
+avg DPS as percent of top build: 70.08%
+

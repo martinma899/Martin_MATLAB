@@ -1,0 +1,815 @@
+--> Mandatory Mods <--
+
+ 1               Serration   DM  +1.65 
+
+--> Flexible Mods <--
+
+ 2           Heavy_Caliber   DM  +1.50 
+ 3           Split_Chamber   MM  +0.90 
+ 4            Point_Strike  CCM  +1.50 
+ 5             Vital_Sense  CMM  +1.20 
+ 6         Primed_Bane_Mod  FDM  +0.45 
+11      Elemental_Ninety_1   DM  +0.90 
+12      Elemental_Ninety_2   DM  +0.90 
+14     Vigilante_Armaments   MM  +0.60 
+15              Fast_Hands RLSM  +0.30 
+17           Magazine_Warp   mM  +0.30 
+22                   Shred  FRM  +0.30 
+23           Speed_Trigger  FRM  +0.60 
+24       Vile_Acceleration   DM  -0.15   FRM  +0.90 
+25                Wildfire   DM  +0.60    mM  +0.20 
+
+--> Excluded Mods <--
+
+ 7             Argon_Scope  CCM  +1.35 
+ 8           Bladed_Rounds  CMM  +1.20 
+ 9       Elemental_Sixty_1   DM  +0.60 
+10       Elemental_Sixty_2   DM  +0.60 
+13      Elemental_Ninety_3   DM  +0.90 
+16             Hammer_Shot  CMM  +0.60 
+18                Bane_Mod   DM  +0.30 
+19      Primed_Cryo_Rounds   DM  +1.65 
+20       Primed_Fast_Hands RLSM  +0.55 
+21            Primed_Shred  FRM  +0.55 
+26          Critical_Delay  FRM  -0.36   CCM  +0.48 
+
+--> Build Ranking #1 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   39792.82
+  Burst DPS:   44934.05
+avg DPS as percent of top build: 100.00%
+
+--> Build Ranking #2 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   38405.17
+  Burst DPS:   44934.05
+avg DPS as percent of top build: 96.51%
+
+--> Build Ranking #3 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+         Vile_Acceleration
+
+Average DPS:   37047.11
+  Burst DPS:   41833.60
+avg DPS as percent of top build: 93.10%
+
+--> Build Ranking #4 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   35455.03
+  Burst DPS:   39272.36
+avg DPS as percent of top build: 89.10%
+
+--> Build Ranking #5 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+
+Average DPS:   35406.00
+  Burst DPS:   39258.17
+avg DPS as percent of top build: 88.98%
+
+--> Build Ranking #6 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   34850.43
+  Burst DPS:   40775.00
+avg DPS as percent of top build: 87.58%
+
+--> Build Ranking #7 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   34396.28
+  Burst DPS:   39541.96
+avg DPS as percent of top build: 86.44%
+
+--> Build Ranking #8 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   33823.90
+  Burst DPS:   38193.94
+avg DPS as percent of top build: 85.00%
+
+--> Build Ranking #9 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   33618.07
+  Burst DPS:   37961.53
+avg DPS as percent of top build: 84.48%
+
+--> Build Ranking #10 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+             Speed_Trigger
+
+Average DPS:   32744.15
+  Burst DPS:   36306.71
+avg DPS as percent of top build: 82.29%
+
+--> Build Ranking #11 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   32644.40
+  Burst DPS:   38193.94
+avg DPS as percent of top build: 82.04%
+
+--> Build Ranking #12 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+         Vile_Acceleration
+
+Average DPS:   32510.73
+  Burst DPS:   36711.12
+avg DPS as percent of top build: 81.70%
+
+--> Build Ranking #13 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   32445.75
+  Burst DPS:   37961.52
+avg DPS as percent of top build: 81.54%
+
+--> Build Ranking #14 <--
+
+                 Serration
+             Heavy_Caliber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   32341.20
+  Burst DPS:   37839.20
+avg DPS as percent of top build: 81.27%
+
+--> Build Ranking #15 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   32173.35
+  Burst DPS:   35637.35
+avg DPS as percent of top build: 80.85%
+
+--> Build Ranking #16 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   31583.20
+  Burst DPS:   36952.34
+avg DPS as percent of top build: 79.37%
+
+--> Build Ranking #17 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   31438.96
+  Burst DPS:   34823.89
+avg DPS as percent of top build: 79.01%
+
+--> Build Ranking #18 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+                     Shred
+             Speed_Trigger
+
+Average DPS:   31376.64
+  Burst DPS:   35430.50
+avg DPS as percent of top build: 78.85%
+
+--> Build Ranking #19 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Speed_Trigger
+                  Wildfire
+
+Average DPS:   31311.01
+  Burst DPS:   34149.88
+avg DPS as percent of top build: 78.69%
+
+--> Build Ranking #20 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+             Speed_Trigger
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   31215.20
+  Burst DPS:   35637.35
+avg DPS as percent of top build: 78.44%
+
+--> Build Ranking #21 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   31212.60
+  Burst DPS:   35882.00
+avg DPS as percent of top build: 78.44%
+
+--> Build Ranking #22 <--
+
+                 Serration
+             Heavy_Caliber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   31197.57
+  Burst DPS:   35228.30
+avg DPS as percent of top build: 78.40%
+
+--> Build Ranking #23 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Magazine_Warp
+         Vile_Acceleration
+
+Average DPS:   31062.72
+  Burst DPS:   34149.88
+avg DPS as percent of top build: 78.06%
+
+--> Build Ranking #24 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   30830.46
+  Burst DPS:   34149.88
+avg DPS as percent of top build: 77.48%
+
+--> Build Ranking #25 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   30623.50
+  Burst DPS:   35829.50
+avg DPS as percent of top build: 76.96%
+
+--> Build Ranking #26 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+             Speed_Trigger
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   30502.68
+  Burst DPS:   34823.89
+avg DPS as percent of top build: 76.65%
+
+--> Build Ranking #27 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+       Vigilante_Armaments
+             Speed_Trigger
+
+Average DPS:   30287.06
+  Burst DPS:   33582.29
+avg DPS as percent of top build: 76.11%
+
+--> Build Ranking #28 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+         Vile_Acceleration
+
+Average DPS:   30242.54
+  Burst DPS:   34149.88
+avg DPS as percent of top build: 76.00%
+
+--> Build Ranking #29 <--
+
+                 Serration
+             Heavy_Caliber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   29856.87
+  Burst DPS:   33071.46
+avg DPS as percent of top build: 75.03%
+
+--> Build Ranking #30 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+       Vigilante_Armaments
+             Speed_Trigger
+
+Average DPS:   29713.38
+  Burst DPS:   32946.20
+avg DPS as percent of top build: 74.67%
+
+--> Build Ranking #31 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   29622.86
+  Burst DPS:   34658.75
+avg DPS as percent of top build: 74.44%
+
+--> Build Ranking #32 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   29540.62
+  Burst DPS:   33357.26
+avg DPS as percent of top build: 74.24%
+
+--> Build Ranking #33 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+
+Average DPS:   29501.57
+  Burst DPS:   33313.17
+avg DPS as percent of top build: 74.14%
+
+--> Build Ranking #34 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+                     Shred
+
+Average DPS:   29306.56
+  Burst DPS:   31897.26
+avg DPS as percent of top build: 73.65%
+
+--> Build Ranking #35 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   29236.84
+  Burst DPS:   33610.67
+avg DPS as percent of top build: 73.47%
+
+--> Build Ranking #36 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   29235.79
+  Burst DPS:   32383.51
+avg DPS as percent of top build: 73.47%
+
+--> Build Ranking #37 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+                     Shred
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   29156.32
+  Burst DPS:   34707.68
+avg DPS as percent of top build: 73.27%
+
+--> Build Ranking #38 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   29058.93
+  Burst DPS:   33406.14
+avg DPS as percent of top build: 73.03%
+
+--> Build Ranking #39 <--
+
+                 Serration
+             Heavy_Caliber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   28965.29
+  Burst DPS:   33298.50
+avg DPS as percent of top build: 72.79%
+
+--> Build Ranking #40 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+             Speed_Trigger
+
+Average DPS:   28853.76
+  Burst DPS:   31993.04
+avg DPS as percent of top build: 72.51%
+
+--> Build Ranking #41 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   28510.48
+  Burst DPS:   33357.26
+avg DPS as percent of top build: 71.65%
+
+--> Build Ranking #42 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_1
+        Elemental_Ninety_2
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   28472.80
+  Burst DPS:   33313.18
+avg DPS as percent of top build: 71.55%
+
+--> Build Ranking #43 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+                     Shred
+             Speed_Trigger
+
+Average DPS:   28472.45
+  Burst DPS:   32151.09
+avg DPS as percent of top build: 71.55%
+
+--> Build Ranking #44 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+             Speed_Trigger
+                  Wildfire
+
+Average DPS:   28412.90
+  Burst DPS:   30989.00
+avg DPS as percent of top build: 71.40%
+
+--> Build Ranking #45 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+         Vile_Acceleration
+
+Average DPS:   28411.32
+  Burst DPS:   33241.25
+avg DPS as percent of top build: 71.40%
+
+--> Build Ranking #46 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+                     Shred
+         Vile_Acceleration
+
+Average DPS:   28286.41
+  Burst DPS:   32518.06
+avg DPS as percent of top build: 71.08%
+
+--> Build Ranking #47 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   28271.13
+  Burst DPS:   31314.98
+avg DPS as percent of top build: 71.05%
+
+--> Build Ranking #48 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+       Vigilante_Armaments
+             Speed_Trigger
+                  Wildfire
+
+Average DPS:   28188.58
+  Burst DPS:   30744.35
+avg DPS as percent of top build: 70.84%
+
+--> Build Ranking #49 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+       Vigilante_Armaments
+             Magazine_Warp
+         Vile_Acceleration
+
+Average DPS:   28187.59
+  Burst DPS:   30989.00
+avg DPS as percent of top build: 70.84%
+
+--> Build Ranking #50 <--
+
+                 Serration
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+        Elemental_Ninety_2
+       Vigilante_Armaments
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   27976.83
+  Burst DPS:   30989.00
+avg DPS as percent of top build: 70.31%
+
+--> Build Ranking #51 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+           Primed_Bane_Mod
+        Elemental_Ninety_2
+       Vigilante_Armaments
+
+Average DPS:   27956.45
+  Burst DPS:   29857.49
+avg DPS as percent of top build: 70.26%
+
+--> Build Ranking #52 <--
+
+                 Serration
+             Heavy_Caliber
+             Split_Chamber
+              Point_Strike
+               Vital_Sense
+                     Shred
+         Vile_Acceleration
+                  Wildfire
+
+Average DPS:   27884.59
+  Burst DPS:   31360.87
+avg DPS as percent of top build: 70.07%
+

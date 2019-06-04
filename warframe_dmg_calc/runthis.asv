@@ -1,0 +1,40 @@
+%% house keeping
+clear;addpath('utility')
+
+%% user inputs
+weapon_name = 'Amprex'; % weapon name, same as weapon folder name
+filename = 'experiment.txt'; % write to which file
+sort_criteria = 'average'; % sort by average or burst dps
+dmg_threshold = 0.7; % output builds that are within 70% of top average dps
+% choose mandatory mods and excluded mods(to reduce computation time)
+mandatory_mods_arr = [1 19];
+excluded_mods_arr = [7 8 9 10 11 12 13 18 20 21 25 27 28 29];
+
+%% load mods and base weapon
+%% load weapon
+addpath(weapon_name);
+load([weapon_name '.mat']);
+process_base_weapon;
+load_mods;
+process_mod_selection_input;
+fid = 1; print_mods;
+
+%% computation
+compute_all_builds;rank_builds_and_output;
+
+%% write builds to text
+histogram([wp_arr.avg_dps])
+filename = fullfile(weapon_name,filename);
+if isfile(filename)
+  tempstr = sprintf('File %s already exists. Overwrite?',filename)
+  inp = input('File %s y/n\n','s');
+  switch inp
+    case 'y'
+      fprintf('\nproceeding to compute build stats')
+    otherwise
+      error('mission aborted.')
+  end
+end
+fid = fopen(filename,'w+');
+print_mods;print_builds;
+rmpath('utility')
