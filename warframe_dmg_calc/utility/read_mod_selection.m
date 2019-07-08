@@ -1,23 +1,22 @@
+function [mods,mods_ind,comments] = read_mod_selection(mod_input_file_name)
+
 fid = fopen(mod_input_file_name);
 
 line = [];
 
-mandatory_mods_arr = [];
-flexible_mods_arr = [];
-excluded_mods_arr = [];
 mods = [];
 mod_count = 0;
 
-mandatory_mods_ind = [];
-flexible_mods_ind = [];
-excluded_mods_ind = [];
+mods_ind.mandatory = [];
+mods_ind.flexible = [];
+mods_ind.excluded = [];
 
 comments = [];
 
 current_input_type = [];
-bad_characters = char([10 13]);
-blank_mod = struct('name','','DM',0,'EM',0,'IM',0,'PM',0,'SM',0,'MM',0,'FDM',0,'FRM',0,...
-  'CCM',0,'CMM',0,'RLSM',0,'mM',0);
+bad_characters = char([10 13]); % weird tabs and spaces are not allowed
+% blank_mod = struct('name','','DM',0,'EM',0,'IM',0,'PM',0,'SM',0,'MM',0,'FDM',0,'FRM',0,...
+%   'CCM',0,'CMM',0,'RLSM',0,'mM',0);
 
 while true
   line = fgetl(fid); % get the line for this iteration
@@ -44,32 +43,38 @@ while true
     % break up the line. Format: modname multiplier value multiplier value
     % ... etc etc
     this_mod_str_arr = strsplit(line,' '); % split the line into individual strings
-    if isempty(this_mod_str_arr{1})
-      this_mod_str_arr(1) = [];
-    end
-    if isempty(this_mod_str_arr{end})
-      this_mod_str_arr(end) = [];
-    end
-    this_mod = blank_mod; % make a copy of this mod
+%     if isempty(this_mod_str_arr{1})
+%       this_mod_str_arr(1) = [];
+%     end
+%     if isempty(this_mod_str_arr{end})
+%       this_mod_str_arr(end) = [];
+%     end
+    % take away empty string entries
+    this_mod_str_arr(strcmp('',this_mod_str_arr)) = [];
+    this_mod = []; % make a copy of this mod
     this_mod.name = this_mod_str_arr{1}; % give this mod a name
     for i = 2:2:(numel(this_mod_str_arr)) % assign all of the multipliers
       this_mod.(this_mod_str_arr{i}) = str2double(this_mod_str_arr{i+1});
     end
     mod_count = mod_count+1; % +1 to mod count
-    mods = [mods this_mod]; % put this into the total mod arsenal regardless
+    mods = [mods {this_mod}]; % put this into the total mod arsenal cell array regardless
     % and record the mod count index for each category
     switch current_input_type
       case 'm'
         %mandatory_mods_arr = [mandatory_mods_arr this_mod];
-        mandatory_mods_ind = [mandatory_mods_ind mod_count];
+        mods_ind.mandatory = [mods_ind.mandatory mod_count];
       case 'f'
         %flexible_mods_arr = [flexible_mods_arr this_mod];
-        flexible_mods_ind = [flexible_mods_ind mod_count];
+        mods_ind.flexible = [mods_ind.flexible mod_count];
       case 'e'
         %excluded_mods_arr = [excluded_mods_arr this_mod];
-        excluded_mods_ind = [excluded_mods_ind mod_count];
+        mods_ind.excluded = [mods_ind.excluded mod_count];
     end
   else % if we are in comment mode
     comments = [comments;{line}];
   end
+end
+
+fclose(fid);
+
 end

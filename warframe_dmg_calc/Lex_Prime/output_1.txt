@@ -1,7 +1,7 @@
 --> Mandatory Mods <--
 
- 1           Hornet_Strike   DM  +2.20 
- 2       Elemental_Sixty_1   EM  +0.60 
+ 1           Hornet_Strike   DM  +2.20
+ 2       Elemental_Sixty_1   EM  +0.60
  3       Elemental_Sixty_2   EM  +0.60 
 
 --> Flexible Mods <--
