@@ -1,4 +1,5 @@
-% write builds
+% write builds of weapons to text file
+% part of the old workflow, should be changed
 
 i = 0;
 while true

@@ -1,0 +1,12 @@
+clear;
+
+plot([0 30],[0 30])
+
+Kp = 3.12954;
+Kd = 0;
+%Kd = 0.28409;
+Ki = 0.05;
+
+out = sim('simulink_model.slx')
+
+plot(out.tout,out.ramp_input_out)
