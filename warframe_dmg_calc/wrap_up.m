@@ -1,1 +1,0 @@
-rmpath(weapon_path);
