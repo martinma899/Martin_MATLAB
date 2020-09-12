@@ -1,2 +1,1 @@
-rmpath(genpath('utility'));
-rmpath('weapons');
+rmpath(weapon_path);

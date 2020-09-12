@@ -14,11 +14,13 @@
 % mods user interface because they are not mods
 % 7. Add in weapon databse, complete mod database and complete enemy 
 % database. 
-% 8. Think about what to do with punch-through. 
 % 9. Implement crit enhancement algorithm from the much hated vigilante
-% armaments
+% mod set
 % 10. Rework weapon input format and the entire IO system so they work with
 % both text file and excel .xlsx format
+% 11. Implement weapons with multiple stages of damage and the IO format of
+% that
+% 12. Update enemy scaler
 
 % completed: 
 
@@ -29,6 +31,7 @@ clear;init_seq;
 weapon_name = 'Amprex'; % weapon name, same as weapon folder name
 mod_input_file_name = 'mod_selection_2.txt'; % mod selection input file name
 output_file_name = 'output_5.txt'; % write build outputs to which file
+enemy_name = 'heavy_gunner'; % enemy name, same as enemy file name
 % sort_criteria = 'average'; % sort by average or burst dps
 % dmg_threshold = 0.7; % output builds that are within 70% of top average dps
 
@@ -36,29 +39,46 @@ output_file_name = 'output_5.txt'; % write build outputs to which file
 % if the output file exists, asks if intend to overwrite it
 query_file_overwrite; 
 % load and process weapon file
-addpath(['.\weapons\' weapon_name]); 
+weapon_path = ['.\weapons\' weapon_name];
+addpath(weapon_path); 
 wpb = read_weapon_xlsx([weapon_name '.xlsx']);
 fprintf('Weapon name: %s\n',weapon_name);
 disp(wpb);
 % load mods and display them on screen
+mod_input_file_name = [weapon_path '\' mod_input_file_name];
 [mods,mods_ind,comments] = read_mod_selection(mod_input_file_name);
 print_mods(mods,mods_ind,comments,1)
 
 
 %% compute all weapon moddings
 [all_builds] = generate_all_mod_combs(mods_ind,8);
-[wp_quantum_arr,wp_arr] = compute_all_builds(wpb,mods,all_builds,true);
+[wp_quantum_arr,wp_arr] = compute_all_builds(wpb,mods,all_builds,true)
 
-%% compute all weapon performances against various types of enemies
+%% load enemy file
+enemy = read_enemy_file([enemy_name '.xlsx'],'default');
+enemy = enemy{1};
+enemy = enemy_scaler(enemy,160)
 
-% rank_builds_and_output;
-% 
-% %% plot things and write builds to text
-% plot_things;
-% fid = fopen(full_output_file_name,'w+');
-% print_mods(mods,mods_ind,comments,fid);
-% print_builds;
+%% simulate combat
+[enemy_arr,tarr] = sim_combat(wp,enemy,dmghtm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %% clean up
-% wrap_up;
+wrap_up;
 

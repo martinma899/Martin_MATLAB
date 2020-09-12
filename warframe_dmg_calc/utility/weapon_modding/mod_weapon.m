@@ -19,7 +19,7 @@ wpm = wpb; % create the modded weapon object
 % create additive multiplier array to keep track of all multipliers
 % order: FR, MAG, AMMO, RLS, CC, CM, SC, MS, BD, impact, 
 % puncture, slash, cold, electricity, heat, toxin
-mtplr_names = {'BD' 'FR' 'MAG' 'AMMO' 'RLS' 'CC' 'CM' 'SC' 'MS' ...
+mtplr_names = {'BD' 'FR' 'CH' 'MAG' 'AMMO' 'RLS' 'CC' 'CM' 'SC' 'MS' 'SD'...
   'impact' 'puncture' 'slash' 'cold' 'electricity' 'heat' 'toxin' ...
   'grineer' 'corpus' 'infested' 'corrupted'};
 % numerical array keeping track of all corresponding numerical total
@@ -28,11 +28,15 @@ mtplr_values = zeros(1,numel(mtplr_names));
 % an array with four elemental name strings
 mtplr_elemental_arr = {'cold' 'electricity' 'heat' 'toxin'};
 
+all_elemental_fieldnames = {'cold' 'electricity' 'heat' 'toxin' 'blast' ...
+  'corrosive' 'gas' 'magnetic' 'radiation' 'viral'};
+
 % get weapon field name list
 wpfields = fields(wpm);
 % get the index array that tells which fields are damage type arrays
 % typically has the value 13:25
 dmg_type_ind = get_dmg_type_ind(wpfields);
+elemental_dmg_type_ind = get_elemental_dmg_type_ind(wpfields);
 
 % fix weapon type interactions
 % if strcmp(wpb.trigger,'held')
@@ -99,6 +103,9 @@ for i = 1:numel(mtplr_names)
           wpm.(wpfields{j}) = wpm.(wpfields{j})*(1+this_mtplr_value);
         end
       end
+    case 'FR' % for fire rate, modify both fire rate and charge rate.
+      wpm.(this_mtplr_name) = wpm.(this_mtplr_name)*(1+this_mtplr_value); %FR
+      wpm.CH = wpm.CH/(1+this_mtplr_value); %CH
     otherwise
       % otherwise just do the normal multiplier additions
       wpm.(this_mtplr_name) = wpm.(this_mtplr_name)*(1+this_mtplr_value);
@@ -129,25 +136,21 @@ wpm.heat_mtplr = ...
   sum(modded_elemental_mtplrs(strcmp('heat',modded_elemental_names)));
 wpm.toxin_mtplr = ...
   sum(modded_elemental_mtplrs(strcmp('toxin',modded_elemental_names)));
-% if status is over 100%, make it 100%
-if wpm.SC>1
-  wpm.SC = 1;
-end
 
 % if there actually are any elemental mods,
 if ~isempty(modded_elemental_names)
   
   % now compute the array of total modded elemental damage values
-  modded_elemental_values = modded_elemental_mtplrs*tbd;
+  modded_elemental_values = modded_elemental_mtplrs'*tbd;
   
   % run through unmodded weapon and find all base elemental types, and
   % concatenate those to the end of modded_elemental_names and
   % modded_elemental_values
   
-  for i = 15:24
+  for i = elemental_dmg_type_ind
     if wpm.(wpfields{i})~=0
       modded_elemental_names = [modded_elemental_names wpfields(i)];
-      modded_elemental_values = [modded_elemental_values wpm.(wpfields{i})];
+      modded_elemental_values = [modded_elemental_values ; wpm.(wpfields{i})];
     end
   end
   
@@ -159,15 +162,13 @@ if ~isempty(modded_elemental_names)
     combine_elementals (modded_elemental_names, modded_elemental_values);
   
   % clear out all elemental damage values of wpm
-  for i = 15:24
-    if wpm.(wpfields{i})~=0
-      wpm.(wpfields{i})=0;
-    end
+  for i = elemental_dmg_type_ind
+    wpm.(wpfields{i}) = zeros(1,wpb.damage_phase);
   end
   
   % assign all elemental damage values back
   for i = 1:numel(combined_elemental_names)
-    wpm.(combined_elemental_names{i}) = combined_elemental_values(i);
+    wpm.(combined_elemental_names{i}) = combined_elemental_values(i,:);
   end
   
 end
@@ -177,7 +178,7 @@ end
 wpm_quantum = wpm;
 for i = dmg_type_ind
   if wpm_quantum.(wpfields{i})~=0
-    wpm_quantum.(wpfields{i})=round(wpm_quantum.(wpfields{i})/quantum)*quantum;
+    wpm_quantum.(wpfields{i})=round(wpm_quantum.(wpfields{i})./quantum).*quantum;
   end
 end
 

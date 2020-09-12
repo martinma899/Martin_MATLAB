@@ -5,14 +5,17 @@ function out = genStatusRandomVar (wp)
 % procing anything
 % out.p is the probability of each situation occuring
 % out.p must sum to 1
+
+% get weapon fields
 wpfields = fields(wp);
-tbd = 0;
+% get the index array that tells which fields are damage type arrays
+dmg_type_ind = get_dmg_type_ind(wpfields);
+
 damages = [];
 out.x = [];
 out.p = [];
-for i = 15:24
+for i = dmg_type_ind
   if wp.(wpfields{i})>0
-    tbd = tbd+wp.(wpfields{i});
     out.x = [out.x wpfields(i)];
     switch wpfields{i}
       case {'impact' 'puncture' 'slash'}
@@ -23,5 +26,5 @@ for i = 15:24
   end
 end
 out.x = [{'nan'} out.x];
-out.p = [1-wp.SC wp.SC*damages/tbd];
+out.p = [1-wp.SC wp.SC*damages/sum(damages)];
 end
