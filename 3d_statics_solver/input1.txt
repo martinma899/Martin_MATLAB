@@ -1,0 +1,31 @@
+body body1
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+  F    0     0     0     1             1             0       1
+known moments
+% name x_comp y_comp z_comp scale
+  M    0      0      1      2
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+  Rx   0     1     0     0     -1     0     1    
+  Rx   0     -1     0     1     0     0     1  
+  Ry   0     0     0     0     1     0     1    
+unknown moments
+% name x_dir y_dir z_dir scale 
+  RM   0     0     1     1
+
+body body2
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+  F2    0     0     0     1             1             0       1
+known moments
+% name x_comp y_comp z_comp scale
+  M2    0      0      1      2
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+  Rx2   0     1     0     0     -1     0     1    
+  Rx   0     -1     0     0     1     0     1  
+  Ry   0     0     0     0     1     0     1    
+unknown moments
+% name x_dir y_dir z_dir scale 
+  RM2   0     0     1     1

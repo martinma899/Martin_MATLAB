@@ -1,8 +1,8 @@
 clc;clear;close all
 
-P = 86500; % principal
-n = 12*6+9; % number of months
-APR = 0.0425; % APR
+P = 5000; % principal
+n = 5; % number of months
+APR = 0.08*12; % APR
 
 tax = 3075/12*0; % estimated tax
 insurance = 1370/12*0; % estimated insurance

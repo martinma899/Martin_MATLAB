@@ -1,0 +1,103 @@
+% mcpherson suspension with two sides
+% unit: ft lbf 
+% center: center of the car, on the ground
+
+var hcg 1 % cg height of the car
+var tx 3 % strut tower x offset
+var ty 2 % strut tower y offset
+var a 2.5 % x pos of inner control arm ball joint
+var b 1 % length of control arm
+var trk 3.5 % wheel contact patch x pos
+var c 0.5 % y pos of control arm (control arm level)
+var g 32.174 % gravity, ft/s/s
+var mass 2000/g % mass in slug
+var mg mass*g % total axle weight on two sides of suspensions summed
+var acc 1*g % lateral acceleration due to cornering
+var ma mass*acc % lateral acceleration force
+
+body chassis
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  MG   0     hcg   0     0      -mg     0       1
+  MA   0     hcg   0     ma      0      0       1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale  
+  FIBr a     c     0     -1    0     0     1
+  FIBl -a    c     0     -1    0     0     1
+  Txr  tx    ty    0     -1    0     0     1
+  Tyr  tx    ty    0     0     1     0     1 
+  Txl  -tx   ty    0     -1    0     0     1
+  Tyl  -tx   ty    0     0     1     0     1 
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body control_arm_r
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale  
+  FIBr a     c     0     1     0     0     1
+  FOBr a+b   c     0     -1    0     0     1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body control_arm_l
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale  
+  FIBl -a     c     0     1     0     0     1
+  FOBl -a-b   c     0     -1    0     0     1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body unsprung_r
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  Rxr  trk   0     0     -ma*0.5  0       0       1
+ 
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale 
+  Txr  tx    ty    0     1     0     0     1
+  Tyr  tx    ty    0     0     -1    0     1 
+  FOBr a+b   c     0     1     0     0     1
+  Ryr  trk   0     0     0     1    0       1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body unsprung_l
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  Rxl  -trk   0     0     -ma*0.5  0       0       1
+ 
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale 
+  Txl  -tx   ty    0     1     0     0     1
+  Tyl  -tx   ty    0     0     -1    0     1 
+  FOBl -a-b   c     0    1     0     0     1
+  Ryl  -trk   0     0    0     1     0     1
+
+unknown moments
+% name x_dir y_dir z_dir scale 

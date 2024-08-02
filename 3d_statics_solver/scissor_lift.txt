@@ -1,0 +1,92 @@
+% desk raiser scissor lift
+
+var l_dist 13/12 % half scissor arm length, ft
+var a_dist 1.25/12 % vertical piston mounting point displacement from CNT
+var b_dist 1.5/12 % horizontal piston mounting point displacement from CNT
+var c_dist 2.25/12 % lower piston mounting point from LR
+var h_angle 43.8131 % angle of the scissor lift, determines height, 43.8131 = max height of 18 in
+
+var W 33 % force on the top is 33 lbs
+
+var x_dist l_dist*cosd(h_angle) % half of scissor width
+var y_dist l_dist*sind(h_angle) % half of scissor height
+
+var Vab_x  b_dist*cosd(h_angle)-a_dist*sind(h_angle)
+var Vab_y  b_dist*sind(h_angle)+a_dist*cosd(h_angle)
+var MP_u_x Vab_x
+var MP_u_y Vab_y+y_dist
+var MP_l_x -c_dist*cosd(h_angle)+x_dist
+var MP_l_y c_dist*sind(h_angle)
+
+var pist_dir_x  MP_u_x-MP_l_x
+var pist_dir_y  MP_u_y-MP_l_y 
+
+body top_board
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  W-force -0.5*x_dist 2*y_dist 0   0      -W      0       1      
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir   y_dir   z_dir scale  
+F-UL-Y   -x_dist 2*y_dist 0     0       1       0     1   
+F-UR-Y   x_dist  2*y_dist 0     0       1       0     1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body arm_1 % piston upper mount arm
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir   y_dir   z_dir scale  
+F-UR-Y   x_dist  2*y_dist 0     0       1       0     -1
+F-LL-Y   -x_dist 0        0     0       1       0      1
+F-P-U    MP_u_x  MP_u_y   0     pist_dir_x pist_dir_y 0 1
+F-CNT-X  0       y_dist   0     1       0       0      1
+F-CNT-Y  0       y_dist   0     0       1       0      1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body arm_2 % piston lower mount arm
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir   y_dir   z_dir scale  
+F-UL-Y   -x_dist 2*y_dist 0     0       1       0     -1   
+F-LR-Y   x_dist  0        0     0       1       0      1
+F-P-L    MP_l_x  MP_l_y   0     -pist_dir_x -pist_dir_y 0 1
+F-CNT-X  0       y_dist   0     1       0       0      -1
+F-CNT-Y  0       y_dist   0     0       1       0      -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body piston % piston itself
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir   y_dir   z_dir scale  
+F-P-U    MP_u_x  MP_u_y   0     pist_dir_x pist_dir_y 0 -1
+F-P-L    MP_l_x  MP_l_y   0     -pist_dir_x -pist_dir_y 0 -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 

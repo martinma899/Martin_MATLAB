@@ -1,0 +1,20 @@
+Tire: P225/50R17 93V
+width: 225 mm / 8.8583 in
+height: 112.5 mm / 4.4291 in
+overall diameter: 25.8582
+
+bolt pattern: 5x114.3 mm
+rim: 17 in
+wheel width: 7.5
+offset: 55 mm / 2.1654 in
+hub bore: 64.1mm
+
+
+
+wheel weight: 27
+tire weight: 27
+total: 54
+
+new setup
+wheel weight: 20.5
+tire weight: 24.5

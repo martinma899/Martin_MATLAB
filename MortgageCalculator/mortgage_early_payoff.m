@@ -1,8 +1,8 @@
 clc;clear;close all
 
-P = 200000; % principal
+P = 80000*3*0.8; % principal
 nmin = 36; % best case scenario - min months
-nmax = 12*15; % worse case scenario - full term
+nmax = 15*12; % worse case scenario - full term
 APR = 0.04; % APR
 
 fid = fopen('early_payoff1.txt','w');

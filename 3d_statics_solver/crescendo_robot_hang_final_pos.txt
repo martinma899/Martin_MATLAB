@@ -1,0 +1,58 @@
+% crescendo robot hanging joint moment required analysis
+% unit: in lbf 
+% center: center of the robot, on the ground
+
+var J2_x -5
+var J2_y 14
+var arm 15.5
+var intake 13.6610
+var Ga_w 20.9500
+var Gb_w 12.4739
+var Gc_w 119.4661
+
+body A_intake
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp z_comp  scale
+  Ga   9.2109 21.4060 0 0 -Ga_w 0 1 % gravity of intake
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name        x_loc y_loc z_loc x_dir y_dir z_dir scale
+F1            9.5652  8.6987 0 0 -1 0 1
+R             1.9567 20.0448 0 0 1 0 1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+Rm 0 0 -1 1
+M1 0 0 1 1
+
+body B_arm
+known forces
+% name x_loc y_loc z_loc x_comp y_comp z_comp  scale
+  Gb 1.9457 11.4782 0 0 -Gb_w 0 1
+
+unknown forces
+% name        x_loc y_loc z_loc x_dir y_dir z_dir scale
+F1            9.5652  8.6987 0 0 -1 0 -1
+F2        J2_x J2_y 0 0 -1 0 1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+M1 0 0 1 -1
+M2 0 0 1 1
+
+body C_base
+known forces
+% name x_loc y_loc z_loc x_comp y_comp z_comp  scale
+Gc     -0.9603 5.0864 0 0 -Gc_w 0 1
+
+unknown forces
+% name        x_loc y_loc z_loc x_dir y_dir z_dir scale
+F2        J2_x J2_y 0 0 -1 0 -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+M2 0 0 1 -1

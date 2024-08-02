@@ -1,0 +1,153 @@
+% charged up robot internal force analysis
+% unit: ft lbf 
+% center: center of the robot, on the ground
+
+var WA 7.62164 % weight of arm
+var WT 15 % weight of tower
+var WC 60 % weight of chassis
+
+var ARM_CG_DIST 30.9335/12 % CG location of arm, from the base of the arm
+var ARM_ANG 90 % angle of the arm from fully down
+var T_TOP_Y 50.2294/12 % height of arm mounting point
+
+var la 10.18/12 % x dist of front wheel from center
+var lb 11.584/12 % x dist of rear support wheel from center
+var WC_X 0/12 % x pos of chassis CG
+var WC_Y 3/12 % height of chassis CG
+var WT_Y 25/12 % height of tower CG
+var ARM_MP_X 2/12 % x dist of arm mounting pt
+
+var T_BOTTOM_X 3.5497/12 % height of tower lower mounting point
+
+var BRACE_X 15/12 % x dist of brace lower attach point
+var BRACE_Y 4.5897/12 % y dist of brace lower attach point
+
+var L_ATTACH_X 0/12 % x dist of leg attach point
+var L_ATTACH_Y 14.4547/12 % y dist of leg attach point
+
+var P_TOP_X 2/12 % x dist of piston top attach point
+var P_TOP_Y 33.6915/12 % y dist of piston top attach point
+
+var P_ATTACH_X 7.7422/12 % x offset of piston attach point on leg
+
+var WHEEL_R 1.5/12 % supporting wheel radius, don't need
+var L_ATTACH_D 5/12 % distance from L_ATTACH to P_BOTTOM, don't need
+
+var ARM_CG_X -ARM_MP_X-ARM_CG_DIST*sind(ARM_ANG) % x position of arm CG
+var ARM_CG_Y T_TOP_Y-ARM_CG_DIST*cosd(ARM_ANG) % y position of arm CG
+
+var P_BOTTOM_X P_ATTACH_X % x location of piston bottom mount
+var P_BOTTOM_Y L_ATTACH_Y % y location of piston bottom mount
+
+body chassis
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp z_comp  scale
+  WC   WC_X     WC_Y     0  0      -WC    0       1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name        x_loc y_loc z_loc x_dir y_dir z_dir scale
+R-FW          -la   0     0     0     1     0     1
+F-T-BOTTOM-X  0     T_BOTTOM_X 0 1    0     0     1
+F-T-BOTTOM-Y  0     T_BOTTOM_X 0 0    1     0     1
+F-BRACE       BRACE_X  BRACE_Y 0   -BRACE_X -BRACE_Y+T_TOP_Y 0 1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+
+body tower % use keyword body to specify a new body
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  WT   0     WT_Y  0     0      -WT     0       1
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+F-T-BOTTOM-X  0     T_BOTTOM_X 0 1    0     0     -1
+F-T-BOTTOM-Y  0     T_BOTTOM_X 0 0    1     0     -1
+F-L-ATTACH-X  L_ATTACH_X L_ATTACH_Y 0 1 0   0     1
+F-L-ATTACH-Y  L_ATTACH_X L_ATTACH_Y 0 0 1   0     1
+F-P-TOP-X     P_TOP_X P_TOP_Y 0 1     0     0     1
+F-P-TOP-Y     P_TOP_X P_TOP_Y 0 0     1     0     1
+F-ARM-Y       -ARM_MP_X T_TOP_Y 0 0     -1    0     1
+F-T-TOP       0     T_TOP_Y 0   BRACE_X BRACE_Y-T_TOP_Y 0 1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+M-ARM  0     0     1     1
+ 
+body brace 
+
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+F-T-TOP  0   T_TOP_Y 0   BRACE_X BRACE_Y-T_TOP_Y 0 -1
+F-BRACE  BRACE_X  BRACE_Y 0   -BRACE_X -BRACE_Y+T_TOP_Y 0 -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body leg
+
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+F-L-ATTACH-X  L_ATTACH_X L_ATTACH_Y 0 1 0   0     -1
+F-L-ATTACH-Y  L_ATTACH_X L_ATTACH_Y 0 0 1   0     -1
+R-RW   lb    0     0     0     1     0      1
+F-P-BOTTOM-X P_BOTTOM_X P_BOTTOM_Y 0 1 0 0  1
+F-P-BOTTOM-Y P_BOTTOM_X P_BOTTOM_Y 0 0 1 0  1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body piston
+
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+F-P-TOP-X     P_TOP_X P_TOP_Y 0 1     0     0     -1
+F-P-TOP-Y     P_TOP_X P_TOP_Y 0 0     1     0     -1
+F-P-BOTTOM-X P_BOTTOM_X P_BOTTOM_Y 0 1 0 0  -1
+F-P-BOTTOM-Y P_BOTTOM_X P_BOTTOM_Y 0 0 1 0  -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body arm
+
+known forces
+% name x_loc y_loc z_loc x_comp y_comp z_comp scale
+  WA   ARM_CG_X ARM_CG_Y 0 0 -WA 0 1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+F-ARM-Y  -ARM_MP_X T_TOP_Y 0 0     -1    0     -1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+M-ARM  0     0     1     -1

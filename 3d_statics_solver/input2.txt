@@ -1,0 +1,19 @@
+% simple single body case to test the solver
+
+var alpha 30
+var l 10
+var Fmag 10
+
+body body1
+known forces
+% name x_loc y_loc z_loc x_comp        y_comp        z_comp  scale
+  F    0     0     0     Fmag*cosd(alpha)   Fmag*sind(alpha)   0     -1
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+  R    l*cosd(alpha)   l*sind(alpha)   0     cosd(alpha)  sind(alpha)  0     1    
+  
+unknown moments
+% name x_dir y_dir z_dir scale 

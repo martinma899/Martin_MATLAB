@@ -1,0 +1,187 @@
+% double wishbone suspension with two sides
+% unit: ft lbf 
+% center: center of the car, on the ground
+
+var CG_Y 1 % cg height of the car
+var trk 3.5 % wheel contact patch x pos
+var g 32.174 % gravity, ft/s/s
+var mg 2000 % total axle weight on two sides of suspensions summed
+var mass mg/g % mass in slug
+var acc 1*g % lateral acceleration due to cornering
+var ma mass*acc % lateral acceleration force
+
+var IB_L_X 2.5 % x pos of inner ball joint lower control arm
+var IB_L_Y 0.5 % y pos of inner ball joint lower control arm
+var OB_L_X 3.5 % x pos of outer ball joint lower control arm
+var OB_L_Y IB_L_Y % y pos of outer ball joint lower control arm
+var LC_pct 0.8 % percent inner length of lower control arm's coilover mounting point
+var IB_U_X IB_L_X % x pos of inner ball joint upper control arm
+var IB_U_Y 1.5 % y pos of inner ball joint upper control arm
+var OB_U_X OB_L_X % x pos of outer ball joint upper control arm
+var OB_U_Y IB_U_Y % y pos of outer ball joint upper control arm
+
+var T_X 3 % x pos of strut tower
+var T_Y 2 % y pos of strut tower
+var CJ_X IB_L_X+(OB_L_X-IB_L_X)*LC_pct % x pos of coilover mounting pt on lower control arm
+var CJ_Y IB_L_Y+(OB_L_Y-IB_L_Y)*LC_pct % y pos of coilover mounting pt on lower control arm
+
+body chassis
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  MG   0     CG_Y   0     0      -mg     0       1
+  MA   0     CG_Y   0     ma      0      0       1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-IB-L-X-R IB_L_X  IB_L_Y  0    1                  0               0     1 % pos = control arm in tension
+F-IB-L-Y-R IB_L_X  IB_L_Y  0    0                  1               0     1 % pos = control arm in tension
+
+F-IB-U-R IB_U_X  IB_U_Y  0      OB_U_X-IB_U_X      OB_U_Y-IB_U_Y  0     1 % pos = control arm in tension
+
+F-IB-L-X-L -IB_L_X IB_L_Y  0     -1                 0              0     1 %  pos = control arm in tension
+F-IB-L-Y-L -IB_L_X IB_L_Y  0      0                  1              0     1 
+
+F-IB-U-L -IB_U_X IB_U_Y  0     -OB_U_X--IB_U_X     OB_U_Y-IB_U_Y  0     1 % pos = control arm in tension
+
+F-T-R    T_X     T_Y     0     T_X-CJ_X            T_Y-CJ_Y       0     1 % pos = coilover in compression
+F-T-L    -T_X    T_Y     0     -T_X--CJ_X          T_Y-CJ_Y       0     1 % pos = coilover in compression
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+
+body wheel_hub_R
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  R-X-R trk   0     0     -ma*0.5  0       0       1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir          y_dir         z_dir scale  
+R-Y-R    trk     0       0      0              1             0     1    % pos = tire being supported by ground
+F-OB-L-X-R OB_L_X  OB_L_Y  0    -1             0             0     1    % pos = right side of lower control arm in tension
+F-OB-L-Y-R OB_L_X  OB_L_Y  0    0              1             0     1    
+F-OB-U-R OB_U_X  OB_U_Y  0      IB_U_X-OB_U_X  IB_U_Y-OB_U_Y 0     1    % pos = upper control arm in tension
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body lower_control_arm_R
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-IB-L-X-R IB_L_X  IB_L_Y  0    1                  0               0     -1 % pos = control arm in tension
+F-IB-L-Y-R IB_L_X  IB_L_Y  0    0                  1               0     -1 % pos = control arm in tension
+F-OB-L-X-R OB_L_X  OB_L_Y  0    -1                 0               0     -1    % pos = right side of lower control arm in tension
+F-OB-L-Y-R OB_L_X  OB_L_Y  0    0                  1               0     -1    
+F-CJ-R   CJ_X    CJ_Y    0      T_X-CJ_X           T_Y-CJ_Y       0      -1 % pos = coilover in compression
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body upper_control_arm_R
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-IB-U-R IB_U_X  IB_U_Y  0      OB_U_X-IB_U_X      OB_U_Y-IB_U_Y  0     -1 % pos = control arm in tension
+F-OB-U-R OB_U_X  OB_U_Y  0      IB_U_X-OB_U_X      IB_U_Y-OB_U_Y  0     -1 % pos = upper control arm in tension
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body coilover_R
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-T-R    T_X     T_Y     0     T_X-CJ_X            T_Y-CJ_Y       0     -1 % pos = coilover in compression
+F-CJ-R   CJ_X    CJ_Y    0     T_X-CJ_X           T_Y-CJ_Y       0      1 % pos = coilover in compression
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body wheel_hub_L
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+  R-X-L -trk   0     0     -ma*0.5  0       0       1
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir          y_dir         z_dir scale  
+R-Y-L    -trk     0       0      0              1             0     1    % pos = tire being supported by ground
+F-OB-L-X-L -OB_L_X  OB_L_Y  0    1              0             0     1    % pos = right side of lower control arm in tension
+F-OB-L-Y-L -OB_L_X  OB_L_Y  0    0              1             0     1    
+F-OB-U-L -OB_U_X  OB_U_Y  0      -IB_U_X--OB_U_X  IB_U_Y-OB_U_Y 0     1    % pos = upper control arm in tension
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body lower_control_arm_L
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-IB-L-X-L -IB_L_X IB_L_Y  0     -1                 0              0     -1 %  pos = control arm in tension
+F-IB-L-Y-L -IB_L_X IB_L_Y  0      0                  1              0     -1 
+F-OB-L-X-L -OB_L_X  OB_L_Y  0    1              0             0     -1    % pos = right side of lower control arm in tension
+F-OB-L-Y-L -OB_L_X  OB_L_Y  0    0              1             0     -1    
+F-CJ-L   -CJ_X    CJ_Y    0      -T_X--CJ_X           T_Y-CJ_Y    0      -1 % pos = coilover in compression
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body upper_control_arm_L
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir          y_dir         z_dir scale  
+F-IB-U-L -IB_U_X IB_U_Y  0     -OB_U_X--IB_U_X     OB_U_Y-IB_U_Y  0     -1 % pos = control arm in tension
+F-OB-U-L -OB_U_X  OB_U_Y  0      -IB_U_X--OB_U_X  IB_U_Y-OB_U_Y 0     -1    % pos = upper control arm in tension
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+body coilover_L
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name   x_loc   y_loc   z_loc  x_dir              y_dir           z_dir scale  
+F-T-L    -T_X    T_Y     0     -T_X--CJ_X          T_Y-CJ_Y       0     -1 % pos = coilover in compression
+F-CJ-L   -CJ_X    CJ_Y    0      -T_X--CJ_X           T_Y-CJ_Y    0      1 % pos = coilover in compression
+
+
+unknown moments
+% name x_dir y_dir z_dir scale 

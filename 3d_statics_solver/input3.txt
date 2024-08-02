@@ -1,0 +1,39 @@
+% simple two body case
+
+var alpha 45
+var l 2
+var R 10
+
+body body1
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+  FA   0     0     0     cosd(alpha) sind(alpha)  0   -1    
+  FA   l*cosd(alpha)   l*sind(alpha)   0     cosd(alpha) sind(alpha)  0    1    
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
+
+body body2
+known forces
+% name x_loc y_loc z_loc x_comp y_comp  z_comp  scale
+Rf    l     l/2     0  R      0       0      1  
+
+known moments
+% name x_comp y_comp z_comp scale
+
+unknown forces
+% name x_loc y_loc z_loc x_dir y_dir z_dir scale
+  FA   l*cosd(alpha)   l*sind(alpha)   0     cosd(alpha) sind(alpha)  0    -1  
+  FBX  l     0     0     -1    0     0     1
+  FBY  l     0     0      0    1     0     1
+
+unknown moments
+% name x_dir y_dir z_dir scale 
+
